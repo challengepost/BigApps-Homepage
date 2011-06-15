@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'Adelle';
+  src: url('../fonts/adelle/adellebasic_bold-webfont.eot');
+  src: local('☺'),
+    url('../fonts/adelle/adellebasic_bold-webfont.eot?iefix')           format('eot'),
+    url('../fonts/adelle/adellebasic_bold-webfont.woff')                format('woff'),
+    url('../fonts/adelle/adellebasic_bold-webfont.ttf')                 format('truetype'),
+    url('../fonts/adelle/adellebasic_bold-webfont.svg#webfontnM792KYi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    background-color: #262626;
+    font-family: Helvetica,Arial,sans-serif;
+    }
+#main-bkgd{
+    background: url("../images/background.gif") repeat;
+    }
+    
+#header{
+    height: 100px;
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    }
+.logo{
+    background: url("../images/NYC_BigApps.png") no-repeat;
+    display: block;
+    height: 73px;
+    text-indent: -9999px;
+    }
+
+/*************** BEGIN top green area ****************/     
+    
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    }
+#top-bar{
+    background: #68BD22 url("../images/top-bar-bkgd.jpg") repeat-x;
+    color: white;
+    height: 230px;
+    }
+#top-bar img{
+    float: left;
+    margin-right: 50px;
+    }
+#top-bar h1{
+    font-size: 26px;
+    line-height: 33px;
+    padding: 24px 32px 24px 0;
+    }
+ #top-bar p{
+     font-size: 13px;
+     }   
+#top-bar a.button{
+    background-color: #D50400;
+    border: 3px solid #81C149;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    padding: 8px 10px 6px;
+    text-shadow: none;
+    text-transform: uppercase;
+    }
+    
+/** From Awesome buttons. Changed it to match .button instead of .awesome. **/
+/*
+    awesome buttons are based on a blog post by ZERB
+    Read there blog post for more information:
+    "Super awesome Buttons with CSS3 and RGBA":http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba
+
+    this buttons are even more awesome, as the need only one color for all three states,
+    and have an super awesome onclick state
+*/
+
+/* set an awesome color for the buttons, feel free to add new colors like an .awesome.green or .awesome.secondary */
+.button, a.button {
+  background-color: #111;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font: inherit;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  outline: 0; /*remove dotted line, works for links only*/
+
+  /* vertical margin is the oposite of button's awesomeness */
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* not all browser support these, but who cares? */
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  /* who needs images these days? */
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(150,150,150,.2), rgba(0,0,0,.0));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.2)), color-stop(0.5, rgba(150,150,150,.2)), to(rgba(0,0,0,.0)));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#30ffffff,endColorstr=#10000000) progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135,strength=2);
+
+  /* cross browser inline block hack
+     see http://blog.mozilla.com/webdev/2009/02/20/cross-browser-inline-block/ */
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  position: relative;
+
+  /* IE luv */
+  zoom: 1;
+
+  /*disable text selection (Firefox only)*/
+  -moz-user-select: none;
+  padding: 6px 10px 5px;
+}
+.button:active { padding: 7px 10px 4px; }
+
+/* the awesome size gets set here. Feel Free to add new sizes, like .awesome.small or .small.large   */
+
+.button.large        { padding: 13px 13px 14px; font-size:1.5em; font-weight:bold; text-align:center; }
+.button.large:active { padding: 14px 13px 13px; }
+
+.button.medium        { padding: 10px 10px 9px; }
+.button.medium:active	{ padding: 11px 10px 8px; }
+
+
+.button.grey { color: #7F7F7F !important; background-color: #DFDFDF !important; text-shadow: none !important; }
+
+
+.ie9 .button { filter: none; }
+
+/* OPERA only
+   if there is no border set, Opera shows a transparent background-color if border-radius is set. */
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
+  input.button {
+    border: 1px solid RGBa(0,0,0,0);
+  }
+}
+
+/* hide selection background color */
+.button::selection { background: transparent; }
+
+.button::-moz-focus-inner { border: none; /* remove dotted lines for buttons */ }
+.button:focus,
+.button:hover {
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.4), rgba(150,150,150,.3), rgba(0,0,0,.0));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)), color-stop(0.5, rgba(150,150,150,.3)), to(rgba(0,0,0,.0)));
+  #filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50ffffff,endColorstr=#20000000) progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135,strength=2);
+  color: #fff;
+}
+
+.ie9 .button:focus,
+.ie9 .button:hover { filter: none; }
+.button:focus { text-decoration: underline; }
+
+.button:active	{
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,.2), rgba(150,150,150,.2), rgba(255,255,255,.2));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.2)), color-stop(0.5, rgba(150,150,150,.2)), to(rgba(255,255,255,.2)));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#20000000,endColorstr=#50ffffff) progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=315,strength=1);
+}
+
+.ie9 .button:active { filter: none; }
+
+
+.ie9 .button.disabled:hover,
+.ie9 .button.disabled:active,
+.ie9 .disabled .button:hover,
+.ie9 .disabled .button:active { filter: none; }
+
+/* Safari doesn't support inset box shadow, so we better remove it */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  .button:active	{
+    -webkit-box-shadow: none;
+  }
+}
+/* End of awesome buttons */    
+    
+/*************** END top green area ****************/     
+
+/*************** BEGIN main content white area ****************/       
+
+#content{
+    padding: 32px 32px 48px 32px;
+    }
+.col{
+    float: left;
+    width: 200px;
+    margin-right: 32px;
+    }
+#col4{
+    margin-right: 0;
+    }
+.col img{
+    border: 4px solid #ffffff;
+    -moz-box-shadow: 0 0 3px #505050;
+    -webkit-box-shadow: 0 0 3px #505050;
+    box-shadow:0 0 3px #505050;
+    margin-bottom: 16px;
+    }
+.col h2{
+    font-family: 'Adelle', Georgia, serif;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 12px;
+}    
+.col p{
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 12px;
+    } 
+.col a.small-link{
+    color: #4F8C0E;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    height: 13px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-right: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+/*.col a.small-link:after{
+    content:" ›";
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0;
+    position: relative;
+    top: 1px;
+} */   
+.col a.small-link:hover{
+    color: #F02000;
+    }    
+  
+/*************** END main content white area ****************/
+  
+/*************** BEGIN footer area ****************/         
+
+#footer{
+    width: 960px;
+    margin: 0 auto;
+    padding: 32px 0 32px 32px;
+    }
+#footer #col-left, #footer #col-right{
+    width: 200px;
+    float: left;
+    margin-right: 32px;
+    }
+#footer #col-mid{
+    width: 432px;
+    float: left;
+    margin-right: 32px;
+    }        
+#footer h3{
+    border-bottom: 1px solid #595959;
+    color: #787878;
+    font-family: Adelle,serif;
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+    }
+#footer p{
+    color: #D9D9D9;
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 12px;
+    }
+#footer #col-right p{
+    font-style: italic;
+    }
+#footer #col-right p a{
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    height: 13px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding-right: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFDF3D;
+    }
+#footer #col-right p a:hover{
+    color: red;
+    }
+  	
