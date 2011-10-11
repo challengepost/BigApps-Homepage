@@ -39,33 +39,34 @@ body{
     background-color: white;
     }
 #top-bar{
-    background: #68BD22 url("../images/top-bar-bkgd.jpg") repeat-x;
-    color: white;
+    background: #ffe824 url("../images/header-bkgd.jpg") no-repeat top left;
+    color: black;
     height: 230px;
     }
-#top-bar img{
-    float: left;
-    margin-right: 50px;
-    }
 #top-bar h1{
-    font-size: 26px;
-    line-height: 33px;
-    padding: 24px 32px 24px 0;
+    font-size: 27px;
+    line-height: 37px;
+    padding: 24px 32px 12px 0;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 410px;
+    text-shadow: 1px 1px 2px #FFFFFF;
     }
  #top-bar p{
-     font-size: 13px;
+     font-size: 12px;
+     margin-left: 410px;
      }   
 #top-bar a.button{
-    background-color: #D50400;
-    border: 3px solid #81C149;
+    background-color: #DE0700;
+    /*border: 3px solid white;*/
     color: white;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     padding: 8px 10px 6px;
     text-shadow: none;
     text-transform: uppercase;
+    margin-left: 410px;
     }
     
 /** From Awesome buttons. Changed it to match .button instead of .awesome. **/
